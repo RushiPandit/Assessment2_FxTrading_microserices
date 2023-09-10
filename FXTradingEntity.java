@@ -1,94 +1,48 @@
-package com.FXTrading.model;
+public class FXTradingEntity {
+    private double usdAmount;
+    @NonNull
+    private int customerId;
+    private String customerName;
+    private String currencyPair;
+    private String indianAmount;
 
-import io.micrometer.common.lang.NonNull;
+    public double getUsdAmount() {
+        return usdAmount;
+    }
 
-public class FXTradingEntity{
-	
+    public void setUsdAmount(double usdAmount) {
+        this.usdAmount = usdAmount;
+    }
 
-	
-	private double usd_Amount;
-	
-	@NonNull
-	private int customerID;
-	
-	private String customerName;
-	
+    public int getCustomerId() {
+        return customerId;
+    }
 
-	private String currencyPair;
-	
-	
-	public String getIndianAmount() {
-		return indianAmount;
-	}
+    public void setCustomerId(@NonNull int customerId) {
+        this.customerId = customerId;
+    }
 
-	public void setIndianAmount(String indianAmount) {
-		this.indianAmount = indianAmount;
-	}
+    public String getCustomerName() {
+        return customerName;
+    }
 
-	private String indianAmount;
-	
-	public int getCustomerID() {
-		return customerID;
-	}
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
 
-	public void setCustomerID(int customerID) {
-		this.customerID = customerID;
-	}
+    public String getCurrencyPair() {
+        return currencyPair;
+    }
 
-	public String getCustomerName() {
-		return customerName;
-	}
+    public void setCurrencyPair(String currencyPair) {
+        this.currencyPair = currencyPair;
+    }
 
-	public void setCustomerName(String customerName) {
-		this.customerName = customerName;
-	}
+    public String getIndianAmount() {
+        return indianAmount;
+    }
 
-	
-	public String getCurrencyPair() {
-		return currencyPair;
-	}
-
-	public void setCurrencyPair(String currencyPair) {
-		this.currencyPair = currencyPair;
-	}
-
-	
-	public FXTradingEntity() {
-		super();
-	}
-
-	public FXTradingEntity(double usd_Amount, int customerID, String customerName, String currencyPair) {
-		super();
-		this.usd_Amount = usd_Amount;
-		this.customerID = customerID;
-		this.customerName = customerName;
-		this.currencyPair = currencyPair;
-	}
-
-	@Override
-	public String toString() {
-		return "FXTradingEntity [usd_Amount=" + usd_Amount + ", customerID=" + customerID + ", customerName="
-				+ customerName + ", currencyPair=" + currencyPair + ", indianAmount=" + indianAmount + "]";
-	}
-
-	public double getUsd_Amount() {
-		return usd_Amount;
-	}
-
-	public void setUsd_Amount(double usd_Amount) {
-		this.usd_Amount = usd_Amount;
-	}
-
-	
-
-	
-	
-
-	
-
-	
-	
-	
-	
-	
+    public void setIndianAmount(String indianAmount) {
+        this.indianAmount = indianAmount;
+    }
 }
